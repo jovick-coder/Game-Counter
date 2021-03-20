@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+ <head>
+	 <title>Untitled</title>
+	 <meta charset="UTF-8"/>
+	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	 <link rel="stylesheet" href="css/mean.css" type="text/css"/>
+	 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css"/>
+ </head>
+ 
+	 <body class="text-center">
+
+		<div class= "container">
+		<h1>Sports Score Counter.</h1>
+		<span role= "button"  class="btn btn-success" onClick="teamName()">Start Score Record</span>
+			<div class="card p-3 m-2">
+				<h1 class="text-center">
+					Team one
+				</h1>
+				<span id="showNameTeam1">Team One Name</span>
+				<div id="showScoreTeam1" class="text-center">0</div>
+				<div>
+				<span role= "button"  class="btn btn-primary" onClick="add1()">Score +1</span>
+				<span role= "button"  class="btn btn-danger" onClick="sub1()">Score -1</span>
+				</div>
+			</div>
+			<div class="card p-3 m-2">
+					<h1 class="text-center">
+					Team two
+				</h1>
+				<span id="showNameTeam2">Team Two Name</span>
+				<div id="showScoreTeam2">0</div>
+					<div class="text-center">
+				<span role= "button"  class="btn btn-primary" onClick="add2()">Score +1</span>
+				<span role= "button"  class="btn btn-danger" onClick="sub2()">Score -1</span>
+				</div>
+			</div>
+			<div  id="finalResult"></div>
+			<span role= "button"  class="btn btn-danger m-2" onClick="endGame()">End Game</span>
+		</div>
+
+	<script src="bootstrap/js/mean.js"></script>
+	<script src="js/mean.js"></script>
+	 </body>
+ </html>
